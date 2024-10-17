@@ -92,4 +92,4 @@ void loop() {
 1. Acesse o Tinkercad e monte o circuito com os componentes indicados.
 2. Use o código acima para controlar o LED no pino 6.
 3. Inicie a simulação e verifique o funcionamento do LED piscando.
-4. Publique o link da simulação no repositório GitHub e envie o link na Adalove.
+
