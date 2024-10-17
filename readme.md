@@ -46,3 +46,50 @@ void loop() {
 1. Conecte o Arduino ao computador.
 2. Compile e faça o upload do código no IDE Arduino.
 3. Verifique se o LED está acendendo e apagando conforme o código.
+
+---
+
+## Parte 2: Simulando Blink Externo
+
+### Descrição
+
+Nesta parte, realizei uma simulação no Tinkercad com um Arduino Uno e um protoboard, conectando um LED externo (OFF_BOARD) para criar um pisca-pisca controlado pelo Arduino. 
+
+### Objetivo
+
+- Simular o funcionamento de um LED externo controlado pelo Arduino, utilizando Tinkercad.
+- Ao clicar no **play** no Tinkercad, o projeto deve executar corretamente, simulando o LED piscando com qualquer cadência.
+- A montagem deve incluir:
+  - Protoboard
+  - Ligações elétricas
+  - LED (OFF_BOARD)
+  - Resistor
+  - Arduino Uno
+
+### 🛠️ Código para o Blink Externo
+
+```cpp
+int ledPin = 6; // Pino onde o LED está conectado
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // Configura o pino 6 como saída
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH); // Liga o LED
+  delay(500);                 // Espera 500 milissegundos
+  digitalWrite(ledPin, LOW);  // Desliga o LED
+  delay(500);                 // Espera 500 milissegundos
+}
+```
+
+### 🎥 Simulação no Tinkercad
+
+[Tinkercad Simulação](https://www.tinkercad.com/things/f4UbGFhrSkU-pisca-pisca-ponderada?sharecode=SCBV4frkBzzoMGeRryf0DI8N6RjLT-6B1Zu8GtLbb-A)
+
+### 📋 Instruções
+
+1. Acesse o Tinkercad e monte o circuito com os componentes indicados.
+2. Use o código acima para controlar o LED no pino 6.
+3. Inicie a simulação e verifique o funcionamento do LED piscando.
+4. Publique o link da simulação no repositório GitHub e envie o link na Adalove.
